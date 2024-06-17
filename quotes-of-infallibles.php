@@ -1,7 +1,7 @@
 <?php
 /**
  * @package Quotes_of_Infallibles
- * @version 1.0.0
+ * @version 1.0.2
  */
 
 /*
@@ -15,6 +15,8 @@ Version: 1.0.0
 */
 	function quotes_of_infallible(){
 		/** These are the Quotes */
+		/** quotes are gathered by help of Bing, unfortunately some are wrong, Imam Hasan al-askari & Imam Ali al-Hadi both are wrong */
+
 		$quotes = array("Prophet Muhammad"=>[
 											"The best among you is the one who doesn’t harm others with his tongue and hands.",
 											"A good man treats women with honour.",
@@ -193,10 +195,10 @@ Version: 1.0.0
 						],);
 
 		/** this array is for choosing one of infallibles */
+		/** I excluded wrong quotes by removing name of persons from here: Imam Ali al-Hadi & "Imam Hasan al-Askari" */
 		$holy_persons = array("Prophet Muhammad","Fatimah Zahra","Imam Ali","Imam Hasan",
 							"Imam Husayn","Imam Ali Zayn al-Abidin","Imam Mohammad al-Bagir","Imam Ja'far al-Sadiq",
-							"Imam Musa al-Kazim","Imam Ali al-Rida","Imam Mohammad al-Taqi","Imam Ali al-Hadi"
-							,"Imam Hasan al-Askari","Imam Mohammad al-Mahdi");
+							"Imam Musa al-Kazim","Imam Ali al-Rida","Imam Mohammad al-Taqi","Imam Mohammad al-Mahdi");
 		$chosen = $holy_persons[wp_rand(0,13)];
 
 		/** This is for getting length of array of quotes of chosen person in upper line */
