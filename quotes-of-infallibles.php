@@ -1,7 +1,7 @@
 <?php
 /**
  * @package Quotes_of_Infallibles
- * @version 1.0.2
+ * @version 1.1.0
  */
 
 /*
@@ -11,7 +11,7 @@ Description: A package of Moral Quotes of 14 infallible of shia doctrine, consis
 Author: Mohammad Sharafi
 License: GNU General Public License
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
-Version: 1.0.2
+Version: 1.1.0
 */
 	function quotes_of_infallible(){
 		/** These are the Quotes */
@@ -199,7 +199,7 @@ Version: 1.0.2
 		$holy_persons = array("Prophet Muhammad","Fatimah Zahra","Imam Ali","Imam Hasan",
 							"Imam Husayn","Imam Ali Zayn al-Abidin","Imam Mohammad al-Bagir","Imam Ja'far al-Sadiq",
 							"Imam Musa al-Kazim","Imam Ali al-Rida","Imam Mohammad al-Taqi","Imam Mohammad al-Mahdi");
-		$chosen = $holy_persons[wp_rand(0,13)];
+		$chosen = $holy_persons[wp_rand(0,11)]; //minus 2
 
 		/** This is for getting length of array of quotes of chosen person in upper line */
 		$quotesLength = count($quotes[$chosen]);
@@ -216,7 +216,7 @@ Version: 1.0.2
 		}
 
 		/** hint: %s in first line of below function is what we have to have a value for it */
-		printf(   esc_html('<p id="quote" style=""><span %s>%s</span></p>'),
+		printf(   '<p id="quote" style=""><span %s>%s</span></p>',
 			//__('quotes of Holy Persons'),
 			esc_attr($lang),
 			esc_html(quotes_of_infallible()[0] . " says: " . quotes_of_infallible()[1]));
