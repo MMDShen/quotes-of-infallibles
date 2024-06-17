@@ -1,7 +1,7 @@
 <?php
 /**
  * @package Quotes_of_Infallibles
- * @version 1.1.0
+ * @version 1.2.0
  */
 
 /*
@@ -11,7 +11,7 @@ Description: A package of Moral Quotes of 14 infallible of shia doctrine, consis
 Author: Mohammad Sharafi
 License: GNU General Public License
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
-Version: 1.1.0
+Version: 1.2.0
 */
 	function quotes_of_infallible(){
 		/** These are the Quotes */
@@ -205,6 +205,7 @@ Version: 1.1.0
 		$quotesLength = count($quotes[$chosen]);
 
 		/** This returns chosen person and his selected quote */
+		/** i left unused $chosen variable for next versions */
 		return [$chosen,$quotes[$chosen][wp_rand(0,$quotesLength - 1)]];
 	}
 
@@ -219,7 +220,7 @@ Version: 1.1.0
 		printf(   '<p id="quote" style=""><span %s>%s</span></p>',
 			//__('quotes of Holy Persons'),
 			esc_attr($lang),
-			esc_html(quotes_of_infallible()[0] . " says: " . quotes_of_infallible()[1]));
+			esc_html( "Infallible says: " . quotes_of_infallible()[1]));
 	}
 
 	/** here we attach our function to our hook, i tried admin_footer but result was not what i wish */
