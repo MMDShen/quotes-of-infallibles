@@ -1,4 +1,4 @@
-=== Quotes of Infalliables ===
+=== Quotes of Infallibles ===
 Contributor: Mohammad Sharafi
 Tags: quote, moral quote, morality quotes, Ahlalbayt, Ahadith,
 Requires at least: 5.8
