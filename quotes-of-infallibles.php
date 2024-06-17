@@ -11,7 +11,7 @@ Description: A package of Moral Quotes of 14 infallible of shia doctrine, consis
 Author: Mohammad Sharafi
 License: GNU General Public License
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
-Version: 1.0.0
+Version: 1.0.2
 */
 	function quotes_of_infallible(){
 		/** These are the Quotes */
